@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Bientôt vieux</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+<p> Il vous reste <span id="nbrdefois"> </span> <span id="denree"> </span> avant d'atteindre l'âge de <span id="maxage"> </span> ans" </p>
+
+<script>
+var age = "29";
+var maxage = "80";
+var denree = "kebab";
+var consokebab = "1";
+var nbrdefois = (maxage - age) * consokebab;
+
+document.getElementById ("nbrdefois").innerHTML = nbrdefois;
+document.getElementById ("denree").innerHTML = denree;
+document.getElementById ("maxage").innerHTML = maxage;
+</script>
+</body>
+</html>
